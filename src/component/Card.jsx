@@ -11,7 +11,7 @@ const Card = ({ task, getTaskList }) => {
 
 
     return (
-        <div className="w-[235px] h-[234px] shadow-lg bg-white rounded-xl border flex flex-col justify-between cursor-pointer" >
+        <div data-cy='activity-title'  className="w-[235px] h-[234px] shadow-lg bg-white rounded-xl border flex flex-col justify-between cursor-pointer" >
             <p className="p-5 font-bold text-[18px] font-poppins" onClick={() => {navigate('/detail?task=' + task.id)}}>{task.title}</p>
 
             <div className="flex justify-between p-5">
